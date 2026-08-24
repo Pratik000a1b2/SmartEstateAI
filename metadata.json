@@ -1,0 +1,6 @@
+{
+  "name": "Advanced House Price AI",
+  "description": "Cross-platform AI house price prediction app with ML regression modeling, future property valuation, investment scoring, analytics dashboard, EMI calculator, and PDF report export.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

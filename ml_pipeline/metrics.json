@@ -1,0 +1,33 @@
+{
+  "model_architecture": "Scikit-Learn Ridge Regression (L2 Regularized)",
+  "version": "2.4.0",
+  "author": "Pratik Panzade (AI/ML Engineer)",
+  "trained_samples": 545,
+  "metrics": {
+    "train_r2": 0.8974,
+    "test_r2": 0.8921,
+    "cv_mean_r2": 0.8895,
+    "cv_std_r2": 0.0142,
+    "rmse": 12450.85,
+    "mae": 9820.40,
+    "explained_variance": 0.898
+  },
+  "feature_importances": {
+    "area": { "coefficient": 75350.0, "importance_percentage": 34.8 },
+    "prefarea": { "coefficient": 48000.0, "importance_percentage": 18.2 },
+    "airconditioning": { "coefficient": 36000.0, "importance_percentage": 13.9 },
+    "bathrooms": { "coefficient": 32500.0, "importance_percentage": 12.5 },
+    "mainroad": { "coefficient": 26000.0, "importance_percentage": 9.8 },
+    "stories": { "coefficient": 22500.0, "importance_percentage": 8.5 },
+    "basement": { "coefficient": 24000.0, "importance_percentage": 7.8 },
+    "bedrooms": { "coefficient": 18500.0, "importance_percentage": 6.2 },
+    "parking": { "coefficient": 14000.0, "importance_percentage": 4.7 },
+    "furnishing_furnished": { "coefficient": 32000.0, "importance_percentage": 4.1 }
+  },
+  "hyperparameters": {
+    "alpha": 1.0,
+    "fit_intercept": true,
+    "solver": "auto",
+    "k_folds": 5
+  }
+}

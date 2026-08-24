@@ -1,0 +1,57 @@
+{
+  "entities": {
+    "users": {
+      "title": "Users",
+      "description": "Registered user accounts and login activity logs",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string" },
+        "email": { "type": "string" },
+        "role": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "lastLoginAt": { "type": "string" },
+        "loginCount": { "type": "number" }
+      },
+      "required": ["id", "name", "email"]
+    },
+    "predictions": {
+      "title": "Predictions",
+      "description": "Property price calculations and AI investment advice records",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "userId": { "type": "string" },
+        "userName": { "type": "string" },
+        "userEmail": { "type": "string" },
+        "area": { "type": "number" },
+        "bedrooms": { "type": "number" },
+        "bathrooms": { "type": "number" },
+        "stories": { "type": "number" },
+        "mainroad": { "type": "string" },
+        "guestroom": { "type": "string" },
+        "basement": { "type": "string" },
+        "hotwaterheating": { "type": "string" },
+        "airconditioning": { "type": "string" },
+        "parking": { "type": "number" },
+        "prefarea": { "type": "string" },
+        "furnishingstatus": { "type": "string" },
+        "predictedPrice": { "type": "number" },
+        "investmentScore": { "type": "number" },
+        "investmentAdvice": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["id", "userId", "predictedPrice", "createdAt"]
+    },
+    "deleted_users": {
+      "title": "Deleted Users",
+      "description": "List of revoked/deleted user identifiers for instant auto-logout sync",
+      "type": "object",
+      "properties": {
+        "deletedAt": { "type": "string" },
+        "userId": { "type": "string" },
+        "cleanEmail": { "type": "string" }
+      }
+    }
+  }
+}
